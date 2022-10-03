@@ -1,0 +1,224 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    height: 4rem;
+    width: 100%;
+    /* background-color: var(--backgroundColor); */
+    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); */
+}
+h1.title {
+    color: var(--fontColor);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav.navContent {
+    list-style: none;
+}
+
+nav.navContent li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav.navContent li h3 {
+    transition: all 0.3s ease 0s;
+    color: var(--fontColor);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+nav.navContent li h3.current {
+    transition: all 0.3s ease 0s;
+    color: green;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+nav.navContent li h3:hover {
+    color: green;
+}
+
+.newsSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.newsBoxes {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    overflow-y: scroll;
+    gap: 1rem;
+}
+
+.newsBox {
+    margin-top: 2%;
+    height: 17vh;
+    border-radius: 10px;
+    transition: border 500ms ease-in-out;
+    transition: margin-left 500ms ease-in-out;
+    padding: 0.5rem;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.newsDate {
+    text-align: right;
+    position: relative;
+    font-size: 90%;
+    font-weight: 500;
+    color: #edf0f1;
+}
+
+.newsTitle {
+    position: relative;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #efefef;
+    font-family: "Poppins", sans-serif;
+    height: 3.2rem;
+    min-height: 3.2rem;
+    max-height: 3.2rem;
+}
+
+.newsInnerBox {
+    position: relative;
+    /* top: -55px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsAuthor {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 80%;
+    overflow: hidden;
+}
+
+.newsBoxes::-webkit-scrollbar {
+    width: 3px;
+}
+.newsBoxes::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px #bddae0;
+}
+.newsBoxes::-webkit-scrollbar-thumb {
+    background-color: #00986f;
+}
+
+/* News page */
+
+.newsPageSection {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 100ms ease-in-out;
+}
+.newsPageSection.active {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 100ms ease-in-out;
+}
+
+.newsPage {
+    border-radius: 10px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1%;
+}
+.newsPage span {
+    width: 100%;
+    height: 1.5rem;
+}
+.newsPage span i {
+    color: green;
+    font-size: 1.5rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.newsPageBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+.newsPageAuthor {
+    font-size: 100%;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+.newsPageDate {
+    font-size: 100%;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+.newsPageTitle {
+    width: 98%;
+    font-size: 150%;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.newsPageDescription {
+    width: 98%;
+    font-size: 110%;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.newsPage::-webkit-scrollbar {
+    width: 3px;
+}
+.newsPage::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px #bddae0;
+}
+.newsPage::-webkit-scrollbar-thumb {
+    background-color: #00986f;
+}

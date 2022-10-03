@@ -1,19 +1,43 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar(props) {
     return (
         <>
             <header>
-                <h1 className={props.styles.title}>News classification App</h1>
+                <Link to={"/home"}>
+                    <h1 className={props.styles.title}>
+                        News classification App
+                    </h1>
+                </Link>
+
                 <nav className={props.styles.navContent}>
                     <ul>
                         <li>
-                            <h3 className={props.styles.current}>
-                                Categorize news
-                            </h3>
+                            <Link to={"/prediction"}>
+                                <h3
+                                    className={
+                                        props.index === 1
+                                            ? props.styles.current
+                                            : ""
+                                    }
+                                >
+                                    Categorize news
+                                </h3>
+                            </Link>
                         </li>
                         <li>
-                            <h3>Read news</h3>
+                            <Link to={"/read-news"}>
+                                <h3
+                                    className={
+                                        props.index === 2
+                                            ? props.styles.current
+                                            : ""
+                                    }
+                                >
+                                    Read news
+                                </h3>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

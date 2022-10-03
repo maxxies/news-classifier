@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/news-articles-data.json
 
 # testing
 /coverage

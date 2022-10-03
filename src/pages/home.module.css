@@ -12,6 +12,7 @@ h1.title {
     color: var(--fontColor);
     font-size: 1.5rem;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
 nav.navContent {
@@ -42,7 +43,7 @@ nav.navContent li h3:hover {
 }
 
 button {
-    padding: 9px 25px;
+    padding: 8px 25px;
     background-color: green;
     border: none;
     border-radius: 50px;
@@ -57,7 +58,6 @@ button:hover {
 .hero {
     width: 80%;
     margin: 0 auto;
-    font-family: "Poppins", sans-serif;
 }
 .content {
     position: absolute;
@@ -74,6 +74,7 @@ button:hover {
 
 .content h1 {
     font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
 }
 .content p {
     font-size: 1.5rem;

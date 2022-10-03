@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 function Home() {
     return (
         <>
-            <NavBar styles={styles} />
+            <NavBar styles={styles} index={0} />
             <Hero styles={styles} />
         </>
     );
