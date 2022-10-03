@@ -1,0 +1,7 @@
+:root {
+    --backgroundColor: #24252a;
+    --fontColor: #edf0f1;
+    --fontColorbluish: #0088a9;
+    --buttonBackground: rgba(0, 136, 169, 1);
+    --buttonHoverBackground: rgb(1, 65, 1);
+}

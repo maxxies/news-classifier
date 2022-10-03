@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@200&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/imageTwo.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    font-family: "Comfortaa", cursive;
+}
