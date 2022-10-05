@@ -73,8 +73,8 @@ nav.navContent li h3:hover {
     transition: border 500ms ease-in-out;
     transition: margin-left 500ms ease-in-out;
     padding: 0.5rem;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .newsDate {
@@ -248,6 +248,7 @@ nav.navContent li h3:hover {
     button {
         padding: 6px 25px;
         border-radius: 50px;
+        font-size: 1.1rem;
     }
     .newsSection {
         position: absolute;
@@ -271,19 +272,19 @@ nav.navContent li h3:hover {
 
     .newsBox {
         margin-top: 2%;
-        height: 17vh;
+        height: 12vh;
     }
 
     .newsDate {
-        font-size: 90%;
+        font-size: 95%;
     }
 
     .newsTitle {
-        font-size: 1rem;
-
-        height: 2.4rem;
-        min-height: 2.4rem;
-        max-height: 2.4rem;
+        font-size: 1.3rem;
+        font-weight: 100;
+        height: 4rem;
+        min-height: 4rem;
+        max-height: 4rem;
     }
 
     .newsInnerBox {
@@ -292,9 +293,10 @@ nav.navContent li h3:hover {
     }
 
     .newsAuthor {
-        font-size: 1rem;
-        font-weight: 600;
-        width: 80%;
+        font-size: 1.1rem;
+        font-weight: 100;
+        width: 85%;
+        color: #00986f;
     }
 
     /* News page */
@@ -376,6 +378,7 @@ nav.navContent li h3:hover {
     button {
         padding: 6px 25px;
         border-radius: 50px;
+        font-size: 1.1rem;
     }
     .newsSection {
         position: absolute;
@@ -399,19 +402,19 @@ nav.navContent li h3:hover {
 
     .newsBox {
         margin-top: 2%;
-        height: 17vh;
+        height: 12vh;
     }
 
     .newsDate {
-        font-size: 90%;
+        font-size: 95%;
     }
 
     .newsTitle {
-        font-size: 1rem;
-
-        height: 2.4rem;
-        min-height: 2.4rem;
-        max-height: 2.4rem;
+        font-size: 1.3rem;
+        font-weight: 100;
+        height: 4rem;
+        min-height: 4rem;
+        max-height: 4rem;
     }
 
     .newsInnerBox {
@@ -420,9 +423,10 @@ nav.navContent li h3:hover {
     }
 
     .newsAuthor {
-        font-size: 1rem;
-        font-weight: 600;
-        width: 80%;
+        font-size: 1.1rem;
+        font-weight: 100;
+        width: 85%;
+        color: #00986f;
     }
 
     /* News page */
@@ -454,7 +458,7 @@ nav.navContent li h3:hover {
         height: 1.5rem;
     }
     .newsPage span i {
-        font-size: 1.5rem;
+        font-size: 2rem;
         height: 100%;
     }
 
@@ -463,11 +467,11 @@ nav.navContent li h3:hover {
     }
 
     .newsPageAuthor {
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .newsPageDate {
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .newsPageTitle {
@@ -528,7 +532,7 @@ nav.navContent li h3:hover {
 
     .newsBox {
         margin-top: 2%;
-        height: 16vh;
+        height: 13vh;
     }
 
     .newsDate {
@@ -538,9 +542,10 @@ nav.navContent li h3:hover {
     .newsTitle {
         font-size: 1rem;
 
-        height: 2.4rem;
-        min-height: 2.4rem;
-        max-height: 2.4rem;
+        height: 3rem;
+        min-height: 3rem;
+        max-height: 3rem;
+        font-weight: 100;
     }
 
     .newsInnerBox {
@@ -583,7 +588,7 @@ nav.navContent li h3:hover {
         height: 1.5rem;
     }
     .newsPage span i {
-        font-size: 1.5rem;
+        font-size: 2srem;
         height: 100%;
     }
 
@@ -592,11 +597,11 @@ nav.navContent li h3:hover {
     }
 
     .newsPageAuthor {
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .newsPageDate {
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .newsPageTitle {
@@ -657,7 +662,7 @@ nav.navContent li h3:hover {
 
     .newsBox {
         margin-top: 2%;
-        height: 19vh;
+        height: 17vh;
     }
 
     .newsDate {
@@ -667,9 +672,9 @@ nav.navContent li h3:hover {
     .newsTitle {
         font-size: 1rem;
 
-        height: 2.4rem;
-        min-height: 2.4rem;
-        max-height: 2.4rem;
+        height: 3.2rem;
+        min-height: 3.2rem;
+        max-height: 3.2rem;
     }
 
     .newsInnerBox {
@@ -797,9 +802,9 @@ nav.navContent li h3:hover {
     .newsTitle {
         font-size: 1rem;
 
-        height: 2.4rem;
-        min-height: 2.4rem;
-        max-height: 2.4rem;
+        height: 3rem;
+        min-height: 3rem;
+        max-height: 3rem;
     }
 
     .newsInnerBox {
@@ -926,9 +931,9 @@ nav.navContent li h3:hover {
     .newsTitle {
         font-size: 1rem;
 
-        height: 2.3rem;
-        min-height: 2.3rem;
-        max-height: 2.3rem;
+        height: 3rem;
+        min-height: 3rem;
+        max-height: 3rem;
     }
 
     .newsInnerBox {

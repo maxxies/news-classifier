@@ -7,7 +7,6 @@ function Button(props) {
             <button
                 onClick={() => {
                     props.functionCall(props.item);
-                    console.log("clicked");
                 }}
             >
                 {props.name}

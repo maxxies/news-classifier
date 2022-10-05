@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import axios from "axios";
 import NewsBox from "./NewsBox";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
@@ -27,17 +26,9 @@ function News(props) {
     useEffect(() => {
         function fetchNews() {
             try {
-                //  axios({
-                //     method: "GET",
-                //     url: "news-app/public/news-articles-data.json",
-                //     // url: "https://news-app-4d4c8-default-rtdb.europe-west1.firebasedatabase.app/news-articles.json",
-                //     headers: {
-                //         "Access-Control-Allow-Origin": "*",
-                //         "Access-Control-Allow-Headers": "*",
-                //         "Access-Control-Allow-Methods": "*",
-                //     },
-                // });
-                fetch("news-articles-data.json")
+                fetch(
+                    "https://news-app-4d4c8-default-rtdb.europe-west1.firebasedatabase.app/news-articles.json",
+                )
                     .then((response) => {
                         if (response.ok) {
                             return response.json();

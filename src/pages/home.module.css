@@ -404,14 +404,14 @@ button:hover {
     }
 
     .content small {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .content h1 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .content p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
 
         letter-spacing: 0.1em;
     }

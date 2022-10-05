@@ -54,8 +54,8 @@ nav.navContent li h3:hover {
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     padding: 1rem;
 }
 .midSection .leftPanel {
@@ -143,7 +143,8 @@ textarea::-webkit-scrollbar-thumb {
 
 .results {
     width: 100%;
-    color: #efefef;
+    font-weight: 500;
+    color: #edf0f1;
     font-size: 1rem;
 }
 .results table {
@@ -151,6 +152,320 @@ textarea::-webkit-scrollbar-thumb {
 }
 .results td span {
     text-align: right;
+}
+
+@media (min-width: 2001px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+    }
+
+    .midSection {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* outline: 1px solid red; */
+        width: 75vw;
+        height: 70vh;
+        justify-content: space-between;
+
+        border-radius: 0.5rem;
+    }
+    .midSection .leftPanel {
+        width: 60%;
+    }
+    .midSection .leftPanel .textarea {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .leftPanel .textarea textarea {
+        font-size: 1rem;
+        height: 25rem;
+        width: 32rem;
+        padding: 10px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle {
+        margin: 5px;
+
+        border: 2px solid #00986f;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:hover {
+        border: 2px solid #00986f;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:focus {
+        border: 2px solid #00986f;
+    }
+    textarea::-webkit-scrollbar {
+        width: 3px;
+    }
+    textarea::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 10px #bddae0;
+    }
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #00986f;
+    }
+
+    .midSection .leftPanel .btn {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .rightPanel {
+        width: 25%;
+        height: 30%;
+        border: 2px solid #00986f;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        margin-top: -25rem;
+        padding: 1%;
+    }
+
+    .resultTitle {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .results {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .results td span {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1900px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+    }
+
+    .midSection {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* outline: 1px solid red; */
+        width: 75vw;
+        height: 70vh;
+        justify-content: space-between;
+
+        border-radius: 0.5rem;
+    }
+    .midSection .leftPanel {
+        width: 60%;
+    }
+    .midSection .leftPanel .textarea {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .leftPanel .textarea textarea {
+        font-size: 1rem;
+        height: 25rem;
+        width: 32rem;
+        padding: 10px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle {
+        margin: 5px;
+
+        border: 2px solid #00986f;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:hover {
+        border: 2px solid #00986f;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:focus {
+        border: 2px solid #00986f;
+    }
+    textarea::-webkit-scrollbar {
+        width: 3px;
+    }
+    textarea::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 10px #bddae0;
+    }
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #00986f;
+    }
+
+    .midSection .leftPanel .btn {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .rightPanel {
+        width: 25%;
+        height: 30%;
+        border: 2px solid #00986f;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        margin-top: -25rem;
+        padding: 1%;
+    }
+
+    .resultTitle {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .results {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .results td span {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .midSection {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* outline: 1px solid red; */
+        width: 75vw;
+        height: 70vh;
+        justify-content: space-between;
+
+        border-radius: 0.5rem;
+    }
+    .midSection .leftPanel {
+        width: 60%;
+    }
+    .midSection .leftPanel .textarea {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .leftPanel .textarea textarea {
+        font-size: 1rem;
+        height: 15rem;
+        width: 28rem;
+        padding: 10px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle {
+        margin: 5px;
+
+        border: 2px solid #00986f;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:hover {
+        border: 2px solid #00986f;
+    }
+    .midSection .leftPanel .textarea .textareaStyle:focus {
+        border: 2px solid #00986f;
+    }
+    textarea::-webkit-scrollbar {
+        width: 3px;
+    }
+    textarea::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 10px #bddae0;
+    }
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #00986f;
+    }
+
+    .midSection .leftPanel .btn {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .midSection .rightPanel {
+        width: 30%;
+        height: 40%;
+        border: 2px solid #00986f;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        margin-top: -23%;
+        padding: 1%;
+    }
+
+    .resultTitle {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .results {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .results td span {
+        text-align: right;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -237,7 +552,7 @@ textarea::-webkit-scrollbar-thumb {
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
 
-        margin-top: -23%;
+        margin-top: -22%;
         padding: 1%;
     }
 
@@ -336,12 +651,12 @@ textarea::-webkit-scrollbar-thumb {
     }
     .midSection .rightPanel {
         width: 35%;
-        height: 40%;
+        height: 42%;
         border: 2px solid #00986f;
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
 
-        margin-top: -9rem;
+        margin-top: -28%;
         padding: 1%;
     }
 
@@ -439,8 +754,8 @@ textarea::-webkit-scrollbar-thumb {
         margin: 1rem auto;
     }
     .midSection .rightPanel {
-        width: 70%;
-        height: 40%;
+        width: 65%;
+        height: 42%;
         border: 2px solid #00986f;
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
@@ -528,7 +843,7 @@ textarea::-webkit-scrollbar-thumb {
     }
     .midSection .rightPanel {
         width: 80%;
-        height: 40%;
+        height: 42%;
         border: 2px solid #00986f;
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;

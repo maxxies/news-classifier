@@ -6,9 +6,7 @@ function NavBar(props) {
         <>
             <header>
                 <Link to={"/home"}>
-                    <h1 className={props.styles.title}>
-                        News classification App
-                    </h1>
+                    <h1 className={props.styles.title}>News Insight</h1>
                 </Link>
 
                 <nav className={props.styles.navContent}>
@@ -22,7 +20,7 @@ function NavBar(props) {
                                             : ""
                                     }
                                 >
-                                    Categorize news
+                                    Sentiment Analysis
                                 </h3>
                             </Link>
                         </li>

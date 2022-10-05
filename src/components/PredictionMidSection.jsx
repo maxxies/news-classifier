@@ -1,45 +1,70 @@
 import React from "react";
 import { useState } from "react";
 import Button from "./Button";
+import axios from "axios";
 
 function PredictionMidsection(props) {
     const [newsBody, setNewsBody] = useState("");
-    const [social, setSocial] = useState(0);
-    const [environmental, setEnvironmental] = useState(0);
-    const [governance, setGovernance] = useState(0);
+    const [positive, setPositive] = useState(0);
+    const [negative, setNegative] = useState(0);
+    const [neutral, setNeutral] = useState(0);
+    const [mixed, setMixed] = useState(0);
 
-    function handleNewsSubmit() {
+    function clear() {
+        setPositive(0);
+        setMixed(0);
+        setNegative(0);
+        setNeutral(0);
+    }
+
+    function handleNewsSubmit(values) {
         if (newsBody === "") {
             return;
         } else {
-            const data = {
-                data: newsBody,
-            };
-
             try {
-                fetch("", {
-                    method: "POST",
+                clear();
+                const options = {
+                    method: "GET",
+                    url: "https://easy-sentiment-analysis.p.rapidapi.com/sentiment1",
+                    params: { text: newsBody },
                     headers: {
-                        accept: "application.json",
-                        "Content-Type": "application/json",
+                        "X-RapidAPI-Key":
+                            "57d2339edbmsh8988c8fd64d4f33p13f436jsn993c32452bf2",
+                        "X-RapidAPI-Host":
+                            "easy-sentiment-analysis.p.rapidapi.com",
                     },
-                    body: data,
-                })
-                    .then((response) => {
-                        if (response.ok) {
-                            return response.json();
-                        } else {
-                            alert("Something went wrong. try again");
-                        }
+                };
+
+                axios
+                    .request(options)
+                    .then(function (response) {
+                        setPositive(
+                            (
+                                response.data.Sentiment.SentimentScore
+                                    .Positive * 100
+                            ).toFixed(2),
+                        );
+                        setNegative(
+                            (
+                                response.data.Sentiment.SentimentScore
+                                    .Negative * 100
+                            ).toFixed(2),
+                        );
+                        setNeutral(
+                            (
+                                response.data.Sentiment.SentimentScore.Neutral *
+                                100
+                            ).toFixed(2),
+                        );
+                        setMixed(
+                            (
+                                response.data.Sentiment.SentimentScore.Mixed *
+                                100
+                            ).toFixed(2),
+                        );
                     })
-                    .then((data) => {
-                        if (data.status === true) {
-                            setSocial(data.results["social"]);
-                            setGovernance(data.results["governance"]);
-                            setEnvironmental(data.results["environmental"]);
-                        } else if (data.status === false) {
-                            alert("Analysis on data failed, try again");
-                        }
+                    .catch(function (error) {
+                        alert(error);
                     });
             } catch (error) {
                 alert(error);
@@ -57,14 +82,18 @@ function PredictionMidsection(props) {
                                 className={props.styles.textareaBox}
                                 id="textarea"
                                 placeholder="Write your news here..."
-                                onChnge={(event) =>
+                                onChange={(event) =>
                                     setNewsBody(event.target.value)
                                 }
                             ></textarea>
                         </div>
                     </div>
                     <div className={props.styles.btn}>
-                        <Button name={"Submit"} />
+                        <Button
+                            name={"Submit"}
+                            functionCall={handleNewsSubmit}
+                            item={props.item}
+                        />
                     </div>
                 </div>
                 <div className={props.styles.rightPanel}>
@@ -77,26 +106,34 @@ function PredictionMidsection(props) {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p>Environmental: </p>
+                                        <p>Positive: </p>
                                     </td>
                                     <td>
-                                        <span>{`${environmental}%`} </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Social: </p>
-                                    </td>
-                                    <td>
-                                        <span>{`${social}%`} </span>
+                                        <span>{`${positive}%`} </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Governance: </p>
+                                        <p>Negative: </p>
                                     </td>
                                     <td>
-                                        <span>{`${governance}%`} </span>
+                                        <span>{`${negative}%`} </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Neutral: </p>
+                                    </td>
+                                    <td>
+                                        <span>{`${neutral}%`} </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Mixed: </p>
+                                    </td>
+                                    <td>
+                                        <span>{`${mixed}%`} </span>
                                     </td>
                                 </tr>
                             </tbody>
