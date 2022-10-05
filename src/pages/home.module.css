@@ -359,14 +359,14 @@ button:hover {
     }
 
     .content small {
-        font-size: 0.8rem;
+        font-size: 120%;
     }
 
     .content h1 {
-        font-size: 1.5rem;
+        font-size: 170%;
     }
     .content p {
-        font-size: 0.8rem;
+        font-size: 80%;
 
         letter-spacing: 0.1em;
     }
@@ -404,14 +404,14 @@ button:hover {
     }
 
     .content small {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .content h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .content p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
 
         letter-spacing: 0.1em;
     }
