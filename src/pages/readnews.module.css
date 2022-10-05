@@ -1051,7 +1051,7 @@ nav.navContent li h3:hover {
 
     .newsBox {
         margin-top: 2%;
-        height: 17vh;
+        height: 19vh;
     }
 
     .newsDate {
@@ -1061,9 +1061,9 @@ nav.navContent li h3:hover {
     .newsTitle {
         font-size: 0.8rem;
 
-        height: 2rem;
-        min-height: 2rem;
-        max-height: 2rem;
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
     }
 
     .newsInnerBox {
