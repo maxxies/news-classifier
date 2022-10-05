@@ -218,8 +218,912 @@ nav.navContent li h3:hover {
     width: 3px;
 }
 .newsPage::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px #bddae0;
+    /* -webkit-box-shadow: inset 0 0 10px #bddae0; */
 }
 .newsPage::-webkit-scrollbar-thumb {
     background-color: #00986f;
+}
+
+@media (min-width: 2001px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 6px 25px;
+        border-radius: 50px;
+    }
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 45% 45%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 17vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 6px 25px;
+        border-radius: 50px;
+    }
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 45% 45%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 17vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 6px 25px;
+        border-radius: 50px;
+    }
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 45% 45%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 16vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 6px 25px;
+        border-radius: 50px;
+    }
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 45% 45%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 19vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+    header {
+        padding: 10px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 10px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.8rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 45% 45%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 19vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.4rem;
+        min-height: 2.4rem;
+        max-height: 2.4rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 764px) {
+    header {
+        padding: 10px 5%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 5px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.7rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.7rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 19vh;
+    }
+
+    .newsDate {
+        font-size: 90%;
+    }
+
+    .newsTitle {
+        font-size: 1rem;
+
+        height: 2.3rem;
+        min-height: 2.3rem;
+        max-height: 2.3rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 0.8rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 7px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.7rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.7rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .newsSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .newsBoxes {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .newsBox {
+        margin-top: 2%;
+        height: 17vh;
+    }
+
+    .newsDate {
+        font-size: 80%;
+    }
+
+    .newsTitle {
+        font-size: 0.8rem;
+
+        height: 2rem;
+        min-height: 2rem;
+        max-height: 2rem;
+    }
+
+    .newsInnerBox {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsAuthor {
+        font-size: 0.8rem;
+        font-weight: 600;
+        width: 80%;
+    }
+
+    /* News page */
+
+    .newsPageSection {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+    .newsPageSection.active {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        height: 70vh;
+    }
+
+    .newsPage {
+        border-radius: 10px;
+
+        overflow-y: scroll;
+        padding: 1%;
+    }
+    .newsPage span {
+        height: 1.5rem;
+    }
+    .newsPage span i {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .newsPageBox {
+        height: 5vh;
+    }
+
+    .newsPageAuthor {
+        font-size: 100%;
+    }
+
+    .newsPageDate {
+        font-size: 100%;
+    }
+
+    .newsPageTitle {
+        width: 98%;
+        font-size: 150%;
+    }
+
+    .newsPageDescription {
+        width: 98%;
+        font-size: 110%;
+    }
 }

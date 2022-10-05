@@ -101,3 +101,318 @@ button:hover {
         border-color: green;
     }
 }
+
+@media (min-width: 2001px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.6rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.3rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 1.3rem;
+    }
+
+    .content h1 {
+        font-size: 3.6rem;
+    }
+    .content p {
+        font-size: 1.6rem;
+
+        letter-spacing: 0.15em;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.6rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.3rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 1.3rem;
+    }
+
+    .content h1 {
+        font-size: 3.6rem;
+    }
+    .content p {
+        font-size: 1.6rem;
+
+        letter-spacing: 0.15em;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.6rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.3rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 1.3rem;
+    }
+
+    .content h1 {
+        font-size: 3.6rem;
+    }
+    .content p {
+        font-size: 1.6rem;
+
+        letter-spacing: 0.15em;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        padding: 30px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 20px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 1.2rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 1.2rem;
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+
+        letter-spacing: 0.15em;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+    header {
+        padding: 10px 10%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 10px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.8rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 0.9rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: 1rem;
+
+        letter-spacing: 0.1em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 764px) {
+    header {
+        padding: 10px 5%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 1rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 5px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.7rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.7rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 0.8rem;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+
+        letter-spacing: 0.1em;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+        height: 4rem;
+    }
+    h1.title {
+        font-size: 0.8rem;
+    }
+
+    nav.navContent li {
+        padding: 0px 7px;
+    }
+
+    nav.navContent li h3 {
+        font-size: 0.7rem;
+    }
+
+    nav.navContent li h3.current {
+        font-size: 0.7rem;
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 50px;
+    }
+
+    .hero {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content small {
+        font-size: 0.8rem;
+    }
+
+    .content h1 {
+        font-size: 1.1rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+
+        letter-spacing: 0.1em;
+    }
+}
