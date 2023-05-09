@@ -5,19 +5,13 @@ import axios from "axios";
 
 function PredictionMidsection(props) {
     const [newsBody, setNewsBody] = useState("");
-    const [positive, setPositive] = useState(0);
-    const [negative, setNegative] = useState(0);
-    const [neutral, setNeutral] = useState(0);
-    const [mixed, setMixed] = useState(0);
+    const [environmental, setEnvironmental] = useState(0);
+    const [social, setSocial] = useState(0);
+    const [governance, setGovernance] = useState(0);
+  
 
-    function clear() {
-        setPositive(0);
-        setMixed(0);
-        setNegative(0);
-        setNeutral(0);
-    }
-
-    function handleNewsSubmit(values) {
+    // handles api calls to model
+    function handleNewsSubmit() {
         if (newsBody === "") {
             return;
         } else {
@@ -27,41 +21,28 @@ function PredictionMidsection(props) {
                     method: "GET",
                     url: "https://easy-sentiment-analysis.p.rapidapi.com/sentiment1",
                     params: { text: newsBody },
-                    headers: {
-                        "X-RapidAPI-Key":
-                            "57d2339edbmsh8988c8fd64d4f33p13f436jsn993c32452bf2",
-                        "X-RapidAPI-Host":
-                            "easy-sentiment-analysis.p.rapidapi.com",
-                    },
+                   
                 };
 
                 axios
                     .request(options)
                     .then(function (response) {
-                        setPositive(
+                        setSocial(
                             (
-                                response.data.Sentiment.SentimentScore
-                                    .Positive * 100
+                                response.result.social * 100
                             ).toFixed(2),
                         );
-                        setNegative(
+                        setEnvironmental(
                             (
-                                response.data.Sentiment.SentimentScore
-                                    .Negative * 100
+                                response.result.environmental * 100
                             ).toFixed(2),
                         );
-                        setNeutral(
+                        setGovernance(
                             (
-                                response.data.Sentiment.SentimentScore.Neutral *
-                                100
+                                response.result.governance *  100
                             ).toFixed(2),
                         );
-                        setMixed(
-                            (
-                                response.data.Sentiment.SentimentScore.Mixed *
-                                100
-                            ).toFixed(2),
-                        );
+                    
                     })
                     .catch(function (error) {
                         alert(error);
@@ -81,7 +62,7 @@ function PredictionMidsection(props) {
                                 name="textareaDescription"
                                 className={props.styles.textareaBox}
                                 id="textarea"
-                                placeholder="Write your news here..."
+                                placeholder="Write your news content here..."
                                 onChange={(event) =>
                                     setNewsBody(event.target.value)
                                 }
@@ -106,36 +87,29 @@ function PredictionMidsection(props) {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p>Positive: </p>
+                                        <p>Environmental: </p>
                                     </td>
                                     <td>
-                                        <span>{`${positive}%`} </span>
+                                        <span>{`${environmental}%`} </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Negative: </p>
+                                        <p>Social: </p>
                                     </td>
                                     <td>
-                                        <span>{`${negative}%`} </span>
+                                        <span>{`${social}%`} </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Neutral: </p>
+                                        <p>Governance: </p>
                                     </td>
                                     <td>
-                                        <span>{`${neutral}%`} </span>
+                                        <span>{`${governance}%`} </span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <p>Mixed: </p>
-                                    </td>
-                                    <td>
-                                        <span>{`${mixed}%`} </span>
-                                    </td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
