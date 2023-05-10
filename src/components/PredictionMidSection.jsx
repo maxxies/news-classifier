@@ -16,7 +16,6 @@ function PredictionMidsection(props) {
             return;
         } else {
             try {
-                clear();
                 const options = {
                     method: "GET",
                     url: "https://easy-sentiment-analysis.p.rapidapi.com/sentiment1",
