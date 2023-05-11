@@ -1,4 +1,4 @@
-from utils import AttributeDict
+from model.utils import AttributeDict
 
 config = {
     "model_name": "facebook/bart-large-mnli",

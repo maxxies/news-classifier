@@ -1,4 +1,4 @@
-from config import config as cfg
+from model.config import config as cfg
 from transformers import pipeline
 from typing import Dict
 

@@ -1,12 +1,12 @@
 from fastapi import FastAPI, Request
 import uvicorn
 import re
-from zero_shot_classification import ZeroShotClassifier
+from model.zero_shot_classification import ZeroShotClassifier
 
 app = FastAPI()
 
 
-@app.post('/predict')
+@app.get('/predict')
 def predict(request:Request):
     try:
         response = request.json()
