@@ -38,4 +38,4 @@ async def predict(request:Request):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, debug=True)
+    uvicorn.run(app)
