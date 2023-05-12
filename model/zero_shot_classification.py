@@ -14,10 +14,9 @@ class ZeroShotClassifier:
         self.model_name = model_name
         self.pipeline_name = pipeline_name
         self.labels = cfg.labels
-        self.pipeline = self._get_pipeline()
 
 
-    def _get_pipeline(self):
+    def get_pipeline(self):
         if self.pipeline_name == "zero-shot-classification":
             return pipeline(self.pipeline_name, model=self.model_name)
 
@@ -27,8 +26,9 @@ class ZeroShotClassifier:
 
     # predicts scores for each label
     def Predict(self,text: str)-> Dict[str, float]:
-            model = self._get_pipeline()
+            model = self.get_pipeline()
             sentiments = model(text, cfg.labels, multi_label=True)
+            print(sentiments)
             a = sentiments['scores'][sentiments['labels'].index('social')]
             b = sentiments['scores'][sentiments['labels'].index('environmental')]
             c = sentiments['scores'][sentiments['labels'].index('governance')]

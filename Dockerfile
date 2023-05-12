@@ -10,11 +10,21 @@ COPY ./requirements.txt /app/requirements.txt
 # Install the Python dependencies
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Copy the FastAPI app and PyTorch Transformer files into the container
-COPY . /app
+# Set up a new user named "user" with user ID 1000
+RUN useradd -m -u 1000 user
 
-# Expose the port that FastAPI app will run on
-EXPOSE 8000
+# Switch to the "user" user
+USER user
 
-# Define the command to run the FastAPI app
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Set home to the user's home directory
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
+ 
+# Set the working directory to the user's home directory
+WORKDIR $HOME/app
+
+# Copy the current directory contents into the container at $HOME/app setting the owner to the user
+COPY --chown=user . $HOME/app
+
+# Start the FastAPI app on port 7860, the default port expected by Spaces
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]

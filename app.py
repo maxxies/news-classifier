@@ -2,15 +2,19 @@ from fastapi import FastAPI, Request
 import uvicorn
 import re
 from model.zero_shot_classification import ZeroShotClassifier
+from tracemalloc import start
 
 app = FastAPI()
 
 
 @app.get('/predict')
-def predict(request:Request):
+async def predict(request:Request):
+  
     try:
-        response = request.json()
-        data = response['data']
+        start()
+
+        response =  await request.json()
+        data =  response['data']
         
         if data == None or data == "":
             return {
@@ -18,7 +22,7 @@ def predict(request:Request):
                 'result':'Data is empty'
             }
         
-        result = ZeroShotClassifier.Predict(data)
+        result = await ZeroShotClassifier().Predict(text=data)
 
         return {
             'status':True,
@@ -29,7 +33,7 @@ def predict(request:Request):
         return {
             'status':False,
             'result':
-            err
+            "Something went wrong, {}".format(err)
         }
 
 
