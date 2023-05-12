@@ -20,7 +20,7 @@ function NavBar(props) {
                                             : ""
                                     }
                                 >
-                                    Sentiment Analysis
+                                    ESG Analysis
                                 </h3>
                             </Link>
                         </li>

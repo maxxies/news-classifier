@@ -18,7 +18,7 @@ function PredictionMidsection(props) {
             try {
                 const options = {
                     method: "GET",
-                    url: "https://easy-sentiment-analysis.p.rapidapi.com/sentiment1",
+                    url: "https://esg-analysis.herokuapp.com/predict",
                     params: { data: newsBody },
                    
                 };
